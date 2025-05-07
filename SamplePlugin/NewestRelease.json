@@ -1,0 +1,6 @@
+{
+    "AssemblyVersion" : "1.4.5.2",
+    "DalamudApiLevel" : 12,
+    "ChangeLog": "- Did a thing\n- And some other thing",
+    "IsTest": false
+}

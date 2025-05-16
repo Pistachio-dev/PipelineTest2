@@ -6,7 +6,6 @@
     <PackageProjectUrl>https://github.com/goatcorp/SamplePlugin</PackageProjectUrl>
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
     <AssemblyName>SamplePlugin</AssemblyName>
-    <PackageId>SamplePlugin_Packaged</PackageId>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -15,5 +14,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>false</Visible>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JustAPlainProject\APlainProject\APlainProject.csproj" />
   </ItemGroup>
 </Project>

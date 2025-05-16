@@ -30,6 +30,6 @@ jobs:
           Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev"
       - name: Build
         run: |
-          $ver = ${{env.version}}
-          Write-Output $ver
+          $ver = "${{env.version}}"
+          Write-Output "Version: $($ver)"
           invoke-expression 'dotnet build --no-restore --configuration Release --nologo -p:Version=$ver -p:FileVersion=$ver -p:AssemblyVersion=$ver'

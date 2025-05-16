@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: recursive
-      - name: "Verify version information"
-        run: .\.github\Workflows\UpdateVersions.ps1 -PluginAssemblyName "${{env.assemblyName}}"
+      # - name: "Verify version information"
+      #   run: .\.github\Workflows\UpdateVersions.ps1 -PluginAssemblyName "${{env.assemblyName}}"
       - name: "Get version number"
         run: |
             $versionRetrieved = .\.github\Workflows\GetVersionNumber.ps1 -PluginAssemblyName "${{env.assemblyName}}"

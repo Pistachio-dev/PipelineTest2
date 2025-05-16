@@ -5,7 +5,6 @@ using System.IO;
 using Dalamud.Interface.Windowing;
 using Dalamud.Plugin.Services;
 using SamplePlugin.Windows;
-using DalamudBasics.Targeting;
 
 namespace SamplePlugin;
 
@@ -29,7 +28,7 @@ public sealed class Plugin : IDalamudPlugin
     public Plugin()
     {
         Configuration = PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
-        ITargetingService targetingService = null;
+        // ITargetingService targetingService = null;
 
         // you might normally want to embed resources and load them from the manifest stream
         var goatImagePath = Path.Combine(PluginInterface.AssemblyLocation.Directory?.FullName!, "goat.png");

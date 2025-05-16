@@ -33,7 +33,7 @@ $basePluginFolderPath = "$pluginAssesmblyName\"
 
 $schemaPath = "$($basePluginFolderPath)newReleaseSchema.json"
 $newestReleasePath = "$($basePluginFolderPath)NewestRelease.json"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Pistachio-dev/DalamudPluginRepository/refs/heads/main/Schemas/NewestReleaseSchema.json" -OutFile $schemaPath
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/Pistachio-dev/Workflows/refs/heads/master/Schemas/NewestReleaseSchema.json -OutFile $schemaPath
 $newReleaseSchemaString = Get-Content -Path $schemaPath -Raw
 $newReleaseDataString = Get-Content -Path $newestReleasePath -Raw
 

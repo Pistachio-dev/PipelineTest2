@@ -5,6 +5,7 @@
     <Description>A sample plugin.</Description>
     <PackageProjectUrl>https://github.com/goatcorp/SamplePlugin</PackageProjectUrl>
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <AssemblyName>SumplePlagon</AssemblyName>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -13,5 +14,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>false</Visible>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DalamudBasics\DalamudBasics\DalamudBasics.csproj" />
   </ItemGroup>
 </Project>
